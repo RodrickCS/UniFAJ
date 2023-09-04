@@ -12,7 +12,6 @@ typedef struct
 
 int main()
 {
-    int i;
     ficha f;
     cout << "Digite o RA: ";
     cin >> f.ra;
@@ -25,7 +24,7 @@ int main()
 
     f.media = (f.n1 + f.n2) / 2;
 
-    cout << "Nome: " << f.nome << "RA: " << f.ra << "Media: " << f.media << endl;
+    cout << "Nome: " << f.nome << " RA: " << f.ra << " Media: " << f.media << endl;
 
     return 0;
 }
