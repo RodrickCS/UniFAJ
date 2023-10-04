@@ -23,7 +23,7 @@ def escrever_usuario_csv():
             email = email_label_field.get()
             proximo_id = obter_proximo_id()
             if proximo_id is not None:
-                writer.writerow([proximo_id, nome, email])  # Escreve o ID na primeira posição
+                writer.writerow([proximo_id, nome, email])
                 label_informacao.configure(text=f"Usuário escrito com sucesso no arquivo 'usuarios.csv' com ID: {proximo_id}")
             else:
                 print("Não foi possível obter o próximo ID.")
