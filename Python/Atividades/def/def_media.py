@@ -15,7 +15,7 @@ def calcular_media():
 
 def inserir_numeros():
     i = 0
-    while i < 5:
+    while i < 3:
         numero = int(input("Insira um número: "))
         lista.append(numero)
         i += 1
