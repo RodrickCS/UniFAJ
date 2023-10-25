@@ -6,11 +6,8 @@
 #include <cmath>
 #include <iomanip>
 #include <cstring>
-#include <conio.h>
 using namespace std;
-
-#if defined(__WIN32__) || defined(__NT__)
-#endif
+#include <conio.h>
 
 #if defined(__linux__) || defined(__linux)
 #include <termios.h>
@@ -37,6 +34,16 @@ void pausa()
     printf("\nTecle enter para continuar ");
     getchar();
     getchar();
+}
+
+void leStr_c(char *tmp, int max)
+{
+    fgets(tmp, max, stdin);
+    if (tmp[0] == '\n')
+        fgets(tmp, max, stdin);
+    int tam = strlen(tmp) - 1;
+    if (tmp[tam] == '\n')
+        tmp[tam] = '\0';
 }
 
 string leStr()
@@ -226,7 +233,6 @@ string dec2bin(long int dec){
 
 char calcHex(int pos){
     char v_hex[16] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};
-    int i;
     return v_hex[pos];
 }
 
@@ -381,9 +387,25 @@ int calculaIdade(string dtAnt, string dtHoje)
         idade--;
     return idade;
 }
+/*
+string dataHoje(){
+    time_t t = time(0);
+    tm *agora = localtime(&t);
+    string dia = to_string(agora->tm_mday);
+    if (dia.size() == 1)
+        dia = '0' + dia;
+    string mes = to_string(agora->tm_mon + 1);
+    if (mes.size() == 1)
+        mes = "0" + mes;
+    string ano = to_string(agora->tm_year + 1900);
+    return dia + "/" + mes + "/" + ano;
+}
+
+*/
 
 string dataHoje(){
     time_t t = time(0);
+    //cout << "time(0) "<<t<<endl;
     tm *agora = localtime(&t);
     char tmp[5];
     sprintf(tmp, "%02d", agora->tm_mday);
@@ -395,38 +417,36 @@ string dataHoje(){
     return dia + "/" + mes + "/" + ano;
 }
 
-
 void somaDias(char T[11], char newDate[11], int diasAdd)
 {
    time_t resultado = 0;
 
-   int ano = 0, mes = 0, dia = 0, hora = 0, min = 0;
+   int ano = 0, mes = 0, dia = 0;
 
    if (sscanf(T, "%2d/%2d/%4d", &dia, &mes, &ano) == 3)
    {
-      struct tm breakdown = {0};
-      breakdown.tm_year = ano - 1900; /* years since 1900 */
-      breakdown.tm_mon = mes - 1;
-      breakdown.tm_mday = dia;
-      if ((resultado = mktime(&breakdown)) == (time_t)-1)
-      {
-         fprintf(stderr, "Erro -> time_t\n");
-         return;// EXIT_FAILURE;
+       struct tm breakdown;            //= {0};
+       breakdown.tm_year = ano - 1900; /* ano desde 1900 */
+       breakdown.tm_mon = mes - 1;
+       breakdown.tm_mday = dia;
+       if ((resultado = mktime(&breakdown)) == (time_t)-1)
+       {
+           fprintf(stderr, "Erro -> time_t\n");
+           return; 
       }
       resultado += (diasAdd * 86400);
       char data[40];
       struct tm *tmData;
       tmData = localtime(&resultado);
       sprintf(data, "%02d/%02d/%04d", tmData->tm_mday, tmData->tm_mon + 1, tmData->tm_year + 1900);
-      int i;
     
       strcpy(newDate,data);
-      return;// EXIT_SUCCESS;
+      return;
    }
    else
    {
       fprintf(stderr, "Data invalida\n");
-      return; //EXIT_FAILURE;
+      return;
    }
 }
 
@@ -457,20 +477,4 @@ string mesExt(int mes){
     return meses[mes - 1];
 }
 
-/*
- string somaDias(const  string& data, int diasASomar) {
-     tm tmData = {};
-     istringstream ss(data);
-    ss >>  get_time(&tmData, "%d/%m/%Y");//"%Y/%m/%d"
-
-     time_t t =  mktime(&tmData);
-    t += diasASomar * 24 * 60 * 60;
-
-    tmData = * localtime(&t);
-     ostringstream result;
-    result <<  put_time(&tmData, "%d/%m/%Y");//"%Y/%m/%d"
-
-    return result.str();
-}
-*/
 #endif
