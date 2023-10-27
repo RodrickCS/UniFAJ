@@ -3,15 +3,19 @@ from tkinter import *
 
 
 def localizar():
+    numeros = []
     input = int(numero_entry.get())
     for i in range(input):
         if i % 2 != 0:
-            resultado_label.configure(text=i)   
+            numeros.append(i)
+        resultado_label.configure(text=f"Os números ímpares de 0 até {input} são: {numeros}")
+        
+        
 
     
 janela_principal = tk.Tk()
 janela_principal.title("Localizar impares")
-janela_principal.geometry("330x150")
+janela_principal.geometry("430x150")
 
 janela_principal.columnconfigure(0, weight=1)
 janela_principal.columnconfigure(1, weight=1)

@@ -6,7 +6,7 @@ def converter():
     celcius = numero_celcius.get()
     if celcius.isdigit():
         conversor = (float(celcius) * 9 // 5) + 32
-        resultado_label.configure(text=f"{celcius}C° para Fahrenheit é {conversor}")
+        resultado_label.configure(text=f"{celcius}C° para Fahrenheit é {conversor}F°")
     else:
         resultado_label.configure(text=f"Ultilize apenas números")
         
