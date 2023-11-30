@@ -1,6 +1,6 @@
 #include <iostream>
 #include <string>
-#include "../aula04 cpp/mylib.cpp"
+#include "../bibliotecas/myLib.cpp"
 using namespace std;
 
 // Desenvolva uma aplicação em C++ que leia e imprima os seguintes campos:

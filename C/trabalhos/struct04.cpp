@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../aula04 cpp/mylib.cpp"
+#include "../bibliotecas/myLib.cpp"
 using namespace std;
 
 typedef struct
