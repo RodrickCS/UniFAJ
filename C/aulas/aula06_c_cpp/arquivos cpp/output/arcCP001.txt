@@ -1,1 +1,0 @@
-C++ foi criado em 1979 por Bjorne Stroustrup

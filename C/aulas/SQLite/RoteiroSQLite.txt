@@ -1,8 +1,0 @@
-rodar gcc --version
-compilar o codigo sqlite3.c para gerar arquivo objeto
-gcc -c sqlite3.c
-
-rodar g++ --version
-compilar o programa exSQLIte2.cpp com o objeto
-g++ exSQLite.cpp sqlite3.o -o exSQLite
-pronto o arquivo exSQLite.exe foi criado, basta executá-lo.
