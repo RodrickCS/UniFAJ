@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="APS" id="3F43D40B-541F-A150-8E6A-B5010CF76ECB" version="3.5">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 22:40:02 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>3F43D40B-541F-A150-8E6A-B5010CF76ECB</designId>
+</OSDM_Design>

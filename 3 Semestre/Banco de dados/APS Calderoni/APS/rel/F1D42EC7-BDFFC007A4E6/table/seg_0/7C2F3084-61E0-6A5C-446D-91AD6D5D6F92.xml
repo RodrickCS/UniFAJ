@@ -1,0 +1,112 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7C2F3084-61E0-6A5C-446D-91AD6D5D6F92" name="Projeto">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 00:13:39 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codigo" id="75121EAC-ED79-1EE5-63B5-9355A93583BA">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 00:16:40 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nomeProjeto" id="C2ADAB1D-074F-F57A-A656-B0A361848140">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 00:17:01 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clienteVinc" id="3A2C08DB-1985-571D-67A3-B3DC6B089008">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 00:17:13 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9F52D802-9C90-E800-E4B6-191F39C49F3E" referredColumn="108FB4E1-665A-152F-C06A-CDD969C6A079"/>
+</associations>
+</Column>
+<Column name="depResponsavel" id="95B75F57-3C53-B83E-E9F9-A6E5C2E4A7B2">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 00:28:48 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="32EFE1D0-AFF4-B7F4-A4A9-AE8E4B2062FE" referredColumn="B6FA188F-431A-8FEB-C90C-752F80F49821"/>
+</associations>
+</Column>
+<Column name="dataInicio" id="26AE8F15-A175-D654-B7EA-7904F66814D9">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 00:47:58 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dataFinal" id="6E3416A1-3687-CECB-85E5-6A251A1E528F">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 00:48:56 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="138F3E0F-6928-C222-9107-E1C06C3E63BB" name="Projeto_PK">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 00:44:31 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="75121EAC-ED79-1EE5-63B5-9355A93583BA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AA94E6F1-0453-38CC-7291-7CC34DD7BC57" name="Projeto_Cliente_FK">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 00:41:23 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A2C08DB-1985-571D-67A3-B3DC6B089008"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7EAED263-BA56-99A0-A39E-C3A796213E27" name="Projeto_Departamento_FK">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 00:45:52 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95B75F57-3C53-B83E-E9F9-A6E5C2E4A7B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

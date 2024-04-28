@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B10264D7-6D7F-F3CA-0A4B-3273551C1420" name="Endereco">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 23:29:57 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<ordsAlias>table_6</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cep" id="65C73EBE-0B0B-854A-818F-5C0B5949090B">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 23:30:29 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codMatricula" id="CA575EAB-6278-EA99-9CBB-3DBC668B9626">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 23:30:43 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="59FEA8BE-BFA8-716E-608E-828548402259" referredColumn="D23EAC71-B1EF-20F7-CCB4-A398F8C3087C"/>
+</associations>
+</Column>
+<Column name="estado" id="7AF0DB8C-2682-D659-EBC0-D6D8EB797BEE">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 23:31:34 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cidade" id="BBEC8401-4DC7-711B-16AA-A79BB2A3BF7A">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 23:32:03 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="rua" id="05520FE0-6A67-8080-60D7-BF6E741522CE">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 23:32:31 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="bairro" id="E1E62781-9D84-C8E3-28F3-02751F966080">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 23:32:52 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="num" id="1F69E665-45EA-7AEE-1632-F875D50FB0C3">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 23:33:24 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="84B5784C-F188-34FA-8220-332BC2E79F35" name="Endereco_PK">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 23:34:00 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA575EAB-6278-EA99-9CBB-3DBC668B9626"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="840BD2A6-D70E-28F3-2CD0-B8C58682F540" name="Endereco_Funcionarios_FK">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 23:42:57 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA575EAB-6278-EA99-9CBB-3DBC668B9626"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

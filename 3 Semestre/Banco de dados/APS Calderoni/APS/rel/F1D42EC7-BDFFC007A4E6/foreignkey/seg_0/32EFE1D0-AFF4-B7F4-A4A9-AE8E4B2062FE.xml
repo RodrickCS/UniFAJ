@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="32EFE1D0-AFF4-B7F4-A4A9-AE8E4B2062FE" containerWithKeyObject="7C2F3084-61E0-6A5C-446D-91AD6D5D6F92" localFKIndex="7EAED263-BA56-99A0-A39E-C3A796213E27" name="Projeto_Departamento_FK">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 00:45:52 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<referredTableLongName>Departamento</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>4D3D1F5E-B3A9-CBE8-759B-0E70812D4C7C</referredTableID>
+<keyObject>5231E1A9-C1B6-ED09-44D4-646A2E2B97EF</keyObject>
+<referredKeyID>5231E1A9-C1B6-ED09-44D4-646A2E2B97EF</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>codigo</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

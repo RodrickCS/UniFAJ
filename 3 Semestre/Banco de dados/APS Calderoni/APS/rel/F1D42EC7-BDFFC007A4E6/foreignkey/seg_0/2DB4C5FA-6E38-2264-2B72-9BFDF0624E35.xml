@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="2DB4C5FA-6E38-2264-2B72-9BFDF0624E35" containerWithKeyObject="17E8B299-1F45-DE69-A280-6E2629DC6831" localFKIndex="B241787C-1A08-8751-5210-D7EC3B901B73" name="Funcionarios_Funcionarios_FK">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 23:44:02 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<referredTableLongName>Funcionarios</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>17E8B299-1F45-DE69-A280-6E2629DC6831</referredTableID>
+<keyObject>8A2C4D2D-70DE-9DBE-6324-DD2D7588C635</keyObject>
+<referredKeyID>8A2C4D2D-70DE-9DBE-6324-DD2D7588C635</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>matricula</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

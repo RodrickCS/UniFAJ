@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BD433507-D1DC-AE26-93F2-5894C8A4CBE3" name="Dependentes">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 00:02:07 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<ordsAlias>table_10</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codDependende" id="D2607660-A8B7-27D7-05B4-9586065C6596">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-04-13 01:04:12 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codMatric" id="B1CAB26B-9C95-0E8F-5650-59301475E13B">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 00:09:41 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5E5121C8-229D-37A8-F1BC-6E0BF6EA2057" referredColumn="D23EAC71-B1EF-20F7-CCB4-A398F8C3087C"/>
+</associations>
+</Column>
+<Column name="nome" id="380C824F-AFDE-BB4C-ACA0-5B8244A0A1C4">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 00:09:59 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dataNascimento" id="A5FFF4BF-A823-F006-34A8-D0B8B1B8299A">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 00:10:14 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="grauParentesco" id="02A81877-8972-2267-795A-16936A206B5C">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 00:10:46 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0988A6FA-2FA1-E2C2-5085-2B46DFC99F04" name="Dependentes_PK">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 00:10:55 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D2607660-A8B7-27D7-05B4-9586065C6596"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C781DD0-7515-3342-C107-FD218F0C4ED5" name="Dependentes_Funcionarios_FK">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 00:11:42 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1CAB26B-9C95-0E8F-5650-59301475E13B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

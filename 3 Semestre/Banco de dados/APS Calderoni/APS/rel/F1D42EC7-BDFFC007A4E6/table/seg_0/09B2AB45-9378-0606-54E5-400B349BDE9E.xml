@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="09B2AB45-9378-0606-54E5-400B349BDE9E" name="Trabalha">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 00:14:23 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<ordsAlias>table_12</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codMatricula" id="624FE9C7-0460-C066-F37E-275FBD6F77AE">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 00:55:17 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="558C3F64-3C68-583F-5A26-3DE621CBEF04" referredColumn="D23EAC71-B1EF-20F7-CCB4-A398F8C3087C"/>
+</associations>
+</Column>
+<Column name="codProjeto" id="22A85795-10AE-3839-F80A-88A4BF3FC718">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 00:56:45 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="053FA433-B486-541F-4F74-13CBE5F95549" referredColumn="75121EAC-ED79-1EE5-63B5-9355A93583BA"/>
+</associations>
+</Column>
+<Column name="dataInicio" id="C6D8EAE3-B17A-27E4-39E1-7E5CD73BAF9C">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 00:58:05 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dataFim" id="B74DBA10-1FD4-5FFA-72A8-1FDCC8C4B71B">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 00:58:42 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="horasTrabalhadas" id="F783F2F1-93A0-D834-A21E-204B9E7164EA">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 01:27:15 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3BD5B6FB-68CA-62A2-73D9-C6E46460DDA8" name="Trabalha_PK">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 00:59:44 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="624FE9C7-0460-C066-F37E-275FBD6F77AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8CD5D5FA-1B97-A9DF-F756-2A79090A2557" name="Trabalha_Funcionarios_FK">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 01:00:05 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="624FE9C7-0460-C066-F37E-275FBD6F77AE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BBCE96F6-9C8B-7005-4FE5-1AF804AA8442" name="Trabalha_Projeto_FK">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-20 01:01:47 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22A85795-10AE-3839-F80A-88A4BF3FC718"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

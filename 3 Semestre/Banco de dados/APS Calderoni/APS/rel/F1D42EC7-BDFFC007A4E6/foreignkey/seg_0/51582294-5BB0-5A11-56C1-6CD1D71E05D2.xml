@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="51582294-5BB0-5A11-56C1-6CD1D71E05D2" containerWithKeyObject="79E34B86-4206-5738-0561-C6164578C2FA" localFKIndex="F101E005-BC2E-219B-3A16-13906D745F53" name="Ramal_Telefone_FK">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-04-13 01:08:35 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<referredTableLongName>Telefone</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>B49D5875-F87E-5472-50B0-D14A950286D4</referredTableID>
+<keyObject>0D21CFD9-ABF1-A438-0D8D-A5E4DDF6C03D</keyObject>
+<referredKeyID>0D21CFD9-ABF1-A438-0D8D-A5E4DDF6C03D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>numTelefone</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

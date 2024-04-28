@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B49D5875-F87E-5472-50B0-D14A950286D4" name="Telefone">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 22:52:39 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<ordsAlias>table_3</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="numTelefone" id="ACEE59F8-A4E5-A0EB-49A2-A696F7FA24BC">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 22:53:40 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="matricula" id="7AED8EF4-F8C9-715D-8D45-32B0ECD40039">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 22:54:47 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BBE218D7-E1D6-5ACB-4134-99B3D0EFCCE9" referredColumn="D23EAC71-B1EF-20F7-CCB4-A398F8C3087C"/>
+</associations>
+</Column>
+<Column name="tipoTelefone" id="CFD9F58A-F8AF-2BF0-97C5-B18B89B33DE9">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 22:54:58 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3C7BC8E0-C1E0-8326-D52E-4F44B9CFEDFB" referredColumn="2C5FEBFE-1545-17BF-9ED5-BCE17DF47680"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0D21CFD9-ABF1-A438-0D8D-A5E4DDF6C03D" name="Telefone_PK">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 22:55:27 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ACEE59F8-A4E5-A0EB-49A2-A696F7FA24BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8206F76B-6855-F0A0-2BFE-B71BB4BF3709" name="Telefone_Funcionarios_FK">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 23:42:17 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7AED8EF4-F8C9-715D-8D45-32B0ECD40039"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="63B193BA-BDF0-13FA-333E-562B812CA1A9" name="Telefone_TipoTelefone_FK">
+<createdBy>Digo</createdBy>
+<createdTime>2024-04-13 01:38:21 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CFD9F58A-F8AF-2BF0-97C5-B18B89B33DE9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

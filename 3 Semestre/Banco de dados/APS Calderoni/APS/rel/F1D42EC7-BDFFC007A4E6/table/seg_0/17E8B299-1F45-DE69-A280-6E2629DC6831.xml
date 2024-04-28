@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="17E8B299-1F45-DE69-A280-6E2629DC6831" name="Funcionarios">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 22:43:19 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="matricula" id="D23EAC71-B1EF-20F7-CCB4-A398F8C3087C">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 22:44:00 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nome" id="2C26814F-5446-94DC-90A0-911CB19D56EE">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 22:44:38 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dataNascimento" id="D528619F-C9DE-0555-3D2D-9F1940F2EA19">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 22:45:07 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codEndereco" id="878FF8F8-89F6-9174-5AEF-C96C264B6075">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 22:48:08 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="sexo" id="91A35D7D-6041-16D7-95F5-FFB11C3F9EC0">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 22:50:22 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="salario" id="6CB08247-0C4F-5C97-2BFA-037351743E38">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 22:50:52 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="codDepartamento" id="07BB7F1B-EF2D-2E77-ECF3-8BEC6839F0D4">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 23:07:56 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="supervisor" id="95FD5239-5436-7D71-CE00-23732828FE70">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 23:37:22 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2DB4C5FA-6E38-2264-2B72-9BFDF0624E35" referredColumn="D23EAC71-B1EF-20F7-CCB4-A398F8C3087C"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8A2C4D2D-70DE-9DBE-6324-DD2D7588C635" name="Funcionarios_PK">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 22:49:07 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D23EAC71-B1EF-20F7-CCB4-A398F8C3087C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B241787C-1A08-8751-5210-D7EC3B901B73" name="Funcionarios_Funcionarios_FK">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 23:44:02 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="95FD5239-5436-7D71-CE00-23732828FE70"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

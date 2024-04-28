@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BusinessInfoDesign class="oracle.dbtools.crest.model.businessinfo.BusinessInfoDesign" name="Business Information" id="4E96FC26-936F-FA03-F49F-6D87E97F6913">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 22:40:03 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</BusinessInfoDesign>

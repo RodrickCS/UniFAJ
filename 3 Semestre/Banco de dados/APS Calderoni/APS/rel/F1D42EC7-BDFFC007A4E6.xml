@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="Relational_1" id="F1D42EC7-C322-6D11-CCA6-BDFFC007A4E6" mainViewID="93438A15-C923-4892-5C09-4E030DF9299A">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 22:40:04 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+</relationalModel>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="727C9356-1050-2E03-CCDC-632EE73D9608" mainViewID="0FD7C8D4-ACAD-060C-4561-5373F592F10E">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-03-19 22:40:02 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

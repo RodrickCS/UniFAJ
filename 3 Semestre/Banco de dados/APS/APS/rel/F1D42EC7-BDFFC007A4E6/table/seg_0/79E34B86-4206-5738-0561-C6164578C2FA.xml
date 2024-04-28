@@ -1,0 +1,55 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="79E34B86-4206-5738-0561-C6164578C2FA" name="TipoTelefone">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-04-13 01:05:21 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<ordsAlias>table_11</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="codTipo" id="2C5FEBFE-1545-17BF-9ED5-BCE17DF47680">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-04-13 01:05:53 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="telefone" id="F6394EC2-A923-6029-30EC-F6579A4EE2A5">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-04-13 01:08:22 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>A3A3C77D-0366-9768-FF89-1C25E56881C8</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="descricao" id="1FD6895B-A50D-17CE-C279-761298B99230">
+<createdBy>Digo</createdBy>
+<createdTime>2024-04-13 01:35:28 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BBAE27A2-6360-1305-482F-3B7DD9062F42" name="Ramal_PK">
+<createdBy>XIBRO</createdBy>
+<createdTime>2024-04-13 01:05:53 UTC</createdTime>
+<ownerDesignName>APS</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2C5FEBFE-1545-17BF-9ED5-BCE17DF47680"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
